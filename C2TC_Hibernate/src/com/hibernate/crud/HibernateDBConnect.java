@@ -19,8 +19,9 @@ public class HibernateDBConnect {
 				Configuration objcfg = new Configuration();
 				Properties objprop = new Properties();
 				objprop.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
+				objprop.put(Environment.URL, "jdbc:mysql://localhost:3306/b7_hibernate");
 				objprop.put(Environment.USER, "root");
-				objprop.put(Environment.PASS, "Mkyounus@249");
+				objprop.put(Environment.PASS, "mkyounus@249");
 				objprop.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
 				objprop.put(Environment.SHOW_SQL, "true");
 				objprop.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
